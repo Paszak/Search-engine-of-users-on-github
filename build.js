@@ -50,7 +50,7 @@ var App = function (_React$Component) {
 
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'row text-center' },
 				React.createElement(
 					'form',
 					{ onSubmit: function onSubmit(event) {
@@ -91,7 +91,7 @@ var UsersList = function (_React$Component2) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
+				{ className: 'row' },
 				this.users
 			);
 		}
@@ -121,12 +121,24 @@ var User = function (_React$Component3) {
 		value: function render() {
 			return React.createElement(
 				'div',
-				null,
-				React.createElement('img', { src: this.props.user.avatar_url, style: { maxWidth: '100px' } }),
+				{ className: 'col-md-3' },
 				React.createElement(
-					'a',
-					{ href: this.props.user.html_url, target: '_blank' },
-					this.props.user.login
+					'div',
+					{ className: 'profile-header-container' },
+					React.createElement(
+						'div',
+						{ className: 'profile-header-img' },
+						React.createElement('img', { src: this.props.user.avatar_url, style: { maxWidth: '100px' }, className: 'img-circle' }),
+						React.createElement(
+							'div',
+							{ className: 'rank-label-container' },
+							React.createElement(
+								'a',
+								{ className: 'label label-default rank-label', href: this.props.user.html_url, target: '_blank' },
+								this.props.user.login
+							)
+						)
+					)
 				)
 			);
 		}
