@@ -1,3 +1,6 @@
-# zadanie_15_9
+# Search-engine-of-users-on-github
 PROJEKT: Wyszukiwarka użytkowników na Githubie
-https://paszak.github.io/zadanie_15_9/
+
+Z wykorzystaniem React i składni ES6
+
+https://paszak.github.io/Search-engine-of-users-on-github
